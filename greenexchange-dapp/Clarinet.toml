@@ -1,0 +1,20 @@
+[project]
+name = "enery-market"
+description = "A beginner smart contract with examples of commonly used Clarity expressions and data structures"
+authors = []
+telemetry = true
+cache_dir = './.cache'
+
+[contracts.energy-market]
+path = "contracts/energy-market.clar"
+clarity_version = 3
+epoch = 3.0
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
